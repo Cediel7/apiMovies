@@ -14,9 +14,14 @@ dotenv.config()
 app.use(cors())
 app.use(express.json())
 
+//("/")
+//("/:id")
 app.use('/api/movies', movies)
+
 app.use('/api/tv', tv)
+
 app.use('/api/people', people)
+
 app.use('/api/trending', trending)
 
 app.listen(process.env.PORT, () => {
