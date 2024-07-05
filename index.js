@@ -17,11 +17,13 @@ app.use(express.json())
 //("/api/movies")
 //("/api/movies/:id")
 app.use('/api/movies', movies)
-//("")
+//("/api/tv")
+//("/api/tv/:id")
 app.use('/api/tv', tv)
-
+//("api/people")
+//("api/people/:id")
 app.use('/api/people', people)
-
+//("/api/trending/:type")
 app.use('/api/trending', trending)
 
 app.listen(process.env.PORT, () => {
