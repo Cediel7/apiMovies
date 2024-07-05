@@ -14,10 +14,10 @@ dotenv.config()
 app.use(cors())
 app.use(express.json())
 
-//("/")
-//("/:id")
+//("/api/movies")
+//("/api/movies/:id")
 app.use('/api/movies', movies)
-
+//("")
 app.use('/api/tv', tv)
 
 app.use('/api/people', people)
